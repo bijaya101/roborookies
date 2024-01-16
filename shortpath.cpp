@@ -38,9 +38,18 @@ public:
         cin >> r1 >> r2 >> r3 >> r4 >> r5;
     }
 };
+int check(string take)
+{
+    for (int x = 0; x < take.length(); x++)
+    {
+        if (take[x] == 'U')
+        {
+            return 1;
+        }
+    }
 void robo(string in)
 {
-    while (in.length() > 4)
+    while (check(in)==1)
     {
         for (int i = 0; i < in.length(); i++)
         {
